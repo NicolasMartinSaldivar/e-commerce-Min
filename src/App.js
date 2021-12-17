@@ -1,16 +1,13 @@
 import React from 'react'
 import './App.css';
-import NavBar from './Components/NavBar/NavBar';
-import ListItems from './Components/ListItems/ListItems';
-import Product from './Components/Product/Product'
-import Footer from './Components/Footer/Footer';
+import AppRouter from './Components/AppRouter/AppRouter';
+
+
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <ListItems/>
-      <Footer />
+      <AppRouter />
     </div>
     
   );
