@@ -1,5 +1,8 @@
 
 
 export default function ContactUsPage(){
-    return 
+    return (
+        <div>
+        <h3>Página de contacto</h3></div>
+    )
 }

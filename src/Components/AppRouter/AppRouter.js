@@ -5,6 +5,10 @@ import ContainerItemDetail from '../ContainerItemDetail/ContainerItemDetail'
 import HomePage from '../../pages/HomePage/HomePage';
 import ContactUsPage from '../../pages/ContactUsPage/ContactUsPage'
 import NotFoundPage from '../../pages/NotFoundPage/NotFoundPage'
+import AboutUsPage from '../../pages/AboutUsPage/AboutUsPage';
+import ItemDetailPage from '../../pages/ItemDetailPage/ItemDetailPage';
+
+
 
 
 export default function AppRouter(){
@@ -13,10 +17,12 @@ export default function AppRouter(){
     <BrowserRouter>
         <NavBar />
           <Routes>
+            <Route path='/category/:id' element={<ItemDetailPage/>} />
             <Route path='/' element={<HomePage/>} />
             <Route path='/product' element={<ContainerItemDetail/>} />
             <Route path='/contact' element={ <ContactUsPage/>} /> 
-            <Route path='#' element={ <NotFoundPage/>} /> 
+            <Route path='/about' element={ <AboutUsPage/>} /> 
+            <Route path='*' element={ <NotFoundPage/>} /> 
           </Routes>
         <Footer />
     </BrowserRouter>
