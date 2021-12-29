@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+
+.theme-dark nav {
+  background-color: #282c34;
+}
+
+.theme-dark > nav button {
+  color: white;
+  border-color: white ;
+}
+
+.theme-dark .cart-container > * {
+  fill: white;
+}

@@ -1,4 +1,4 @@
-
+import './NotFoundPage'
 
 export default function NotFoundPage(){
     return(

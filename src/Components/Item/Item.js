@@ -1,11 +1,13 @@
+import {useState} from 'react'
 import AddShoppingCart from '../AddShoppingCart/AddShoppingCart'
-import Product from '../Product/Product'
+import ItemCount from '../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
 
 
 
 export default function Item({data}){
 
+   
 
     return(
         <div>
@@ -16,7 +18,7 @@ export default function Item({data}){
             </div>
             <p>${data.price}</p>
             <p>{data.stock}</p>
-            <Product />
+            <ItemCount stock={data.stock}  />
             <AddShoppingCart />
             </Link>
         </div>
