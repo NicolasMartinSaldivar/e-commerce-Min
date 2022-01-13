@@ -1,0 +1,12 @@
+.item-count{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.item-count p{
+    display: inline-block;
+    width: 50%;
+    margin: 10px auto;
+    font-size: 30px;
+}

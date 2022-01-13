@@ -27,3 +27,7 @@
 .box-cart .item-cart-list:nth-of-type(1) {
     border-top: 1px solid #d6d6d6;
 }
+
+div path{
+    color: #161515
+}

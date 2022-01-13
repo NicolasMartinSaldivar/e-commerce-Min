@@ -1,4 +1,15 @@
 .footer{
-    background-color: black;
-    color: white;
+    background-color: #bebeb2;
+}
+
+.footer ul{
+    width: 30%;
+    display: flex;
+    margin: auto;
+}
+
+.footer ul li{
+    list-style: none;
+    color: #03a9f4;
+
 }

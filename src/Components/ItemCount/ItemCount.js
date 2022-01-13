@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Button from '@mui/material/Button'
+import './ItemCount.css'
 
 export default function ItemCount({stock,onAdd}){
 
@@ -14,10 +15,10 @@ export default function ItemCount({stock,onAdd}){
     }
 
     return(
-        <div>
-            <Button variant="outlined" onClick={updateItem}>+</Button>
+        <div className='item-count'>
+            <Button size="small" variant="outlined" onClick={removeItem}>-</Button>
             <p>{itemCount}</p>
-            <Button variant="outlined" onClick={removeItem}>-</Button>
+            <Button variant="outlined" onClick={updateItem}>+</Button>
         </div>
     )
 

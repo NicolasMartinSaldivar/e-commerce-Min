@@ -35,10 +35,10 @@ export default function NavBar(){
                 <img src={logo} alt="logo min" />
             </div>
             <ul>
-                <li><Link to="/"><Button variant="contained">Home</Button></Link></li>
-                <li><Link to="/category"><Button variant="contained">Productos</Button></Link></li>
-                <li><Link to="/about"><Button variant="contained">Nosotros</Button></Link></li>
-                <li><Link to="/contact"><Button variant="contained">Contactanos</Button></Link></li>
+                <li><Link to="/"><Button variant="text">Home</Button></Link></li>
+                <li><Link to="/category"><Button variant="text">Productos</Button></Link></li>
+                <li><Link to="/about"><Button variant="text">Nosotros</Button></Link></li>
+                <li><Link to="/contact"><Button variant="text">Contactanos</Button></Link></li>
             </ul>
             <SwitchTheme changeTheme={changeTheme}/>
             <div className="CartWidget">

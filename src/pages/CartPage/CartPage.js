@@ -11,6 +11,7 @@ export default function CartPage(){
                 <p>Productos</p>
                 <p>{product.name}</p>
                 <p>{product.price}</p>
+                <Button>Finalizar Compra</Button>
             </div>
         })}
         </>

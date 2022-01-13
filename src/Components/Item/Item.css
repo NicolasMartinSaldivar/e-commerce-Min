@@ -1,3 +1,25 @@
-h2{
+
+.item-product{
+    margin: 10px;
+    overflow: hidden;
+}
+.item-product a{
     text-decoration: none;
+}
+
+.item-product h2{
+    color: #bebeb2;
+}
+
+.image-product img{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.item-price{
+    background-color: #bebeb2;
+    width: 30%;
+    margin: 10px auto;
+    border-radius: 30px;
 }

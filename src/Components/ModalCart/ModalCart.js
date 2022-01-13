@@ -1,6 +1,9 @@
 import { Button } from "@mui/material"
 import {Link} from 'react-router-dom'
+import Grid from '@mui/material/Grid'
+import Container from '@mui/material/Container'
 import { useState } from "react"
+import './ModalCart.css'
 
 export default function ModalCart({products, total}){
 
@@ -12,19 +15,26 @@ export default function ModalCart({products, total}){
                     <>
                     {products.map((product)=>{
                         return(
+                        <Container>
+                            <Grid container spacing={3}>
                             <div className='item-cart-list' key={product.id}>
-                            <p>{product.name}</p>
-                            <p>{product.quantity}</p>
-                        </div>
-    
+                                <p>Nombre</p>
+                                <p>{product.name}</p>
+                                <p>Cantidad</p>
+                                <p>{product.quantity}</p>
+                            </div>
+                            </Grid>
+                        </Container>        
                         )
                  })} 
                  <div className="container-finish-buy">
-                     <p>Total</p>
-                     <p>{total}</p>
+                     <Grid xs={3}>
+                            <p>Total</p>
+                            <p>{total}</p>
                      <Link to="/cart">
                         <Button>Finalizar compra</Button>
                      </Link>
+                     </Grid>
                  </div>
                 </>
                 )}
